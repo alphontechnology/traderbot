@@ -6,12 +6,12 @@ function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    function onChangeEmail(event){
-        //console.log(event.target.value);
+    function onChangeEmail(event) {
+        console.log(event.target.value);
         setEmail(event.target.value);
     }
 
-    function onChangePassword(event){
+    function onChangePassword(event) {
         setPassword(event.target.value);
     }
 
@@ -22,11 +22,11 @@ function Login() {
             <section className="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
                 <div className="container">
                     <div className="col-12 d-flex align-items-center justify-content-center">
-                        <div className="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div className="bg-white shadow border-0 rounded border-light p-lg-5 w-100 fmxw-500">
                             <div className="text-center">
                                 <img src="./img/favicon/mstile-150x150.png" alt="TraderBot" width={64} />
                             </div>
-                            <div className="text-center text-md-center mb-4 mt-md-0 p-1">
+                            <div className="text-center text-md-center mb-4 mt-md-0">
                                 <h1 className="mb-0 h3">Sign in to our platform</h1>
                             </div>
 
@@ -59,7 +59,7 @@ function Login() {
                                     </div>
                                 </div>
                                 <div className="d-grid">
-                                        <button type="submit" className="btn btn-gray-800">Sign in</button>
+                                    <button type="submit" className="btn btn-gray-800">Sign in</button>
                                 </div>
                             </form>
                         </div>
