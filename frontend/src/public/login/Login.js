@@ -7,7 +7,7 @@ function Login() {
     const [password, setPassword] = useState('');
 
     function onChangeEmail(event) {
-        console.log(event.target.value);
+        //console.log(event.target.value);
         setEmail(event.target.value);
     }
 
